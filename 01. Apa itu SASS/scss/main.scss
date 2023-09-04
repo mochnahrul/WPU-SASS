@@ -1,0 +1,42 @@
+// CSS Pre Processor muncul karena dirasa ada "kekurangan" pada CSS
+
+// Kekurangan pada CSS:
+// - Tidak ada variabel
+// - Tidak ada function
+// - Tidak ada modularisasi
+// - Tidak bisa melakukan operasi & logika pemrograman
+// - Banyak duplikasi code
+
+// Solusi dari Pre Processor:
+// - Variable
+// - Mixin
+// - Import & Uses
+// - Operator & Built-in Function
+// - Nested CSS
+
+// Alasan menggunakan SASS
+// - Mempermudah penulisan
+// - Mempermudah pengelolaan
+// - Memiliki banyak fungsi built-in
+// - Kita dapat membuat fungsi sendiri
+// - Kita dapat memodifikasi framework CSS
+// - Banyak perusahaan menggunakan SASS
+
+// Alasan tidak menggunakan SASS
+// - Banyak fitur SASS yang sekarang sudah dimiliki oleh CSS
+// - Tidak untuk project kecil
+// - Styled Components / CSS in JS
+
+$bg-color: salmon;
+$font-color: white;
+
+header {
+  background-color: $bg-color;
+  padding: 1rem;
+  h1 {
+    color: $font-color;
+  }
+  p {
+    color: $font-color;
+  }
+}

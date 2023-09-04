@@ -1,0 +1,9 @@
+.footer ul {
+  @include inline-list();
+  li {
+    background-color: lightsalmon;
+    a {
+      color: pink;
+    }
+  }
+}

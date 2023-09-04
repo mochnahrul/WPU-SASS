@@ -1,0 +1,15 @@
+.container {
+  background-color: violet;
+  padding: 0.5rem;
+}
+
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(238, 130, 238, 0.5);
+}/*# sourceMappingURL=main.css.map */

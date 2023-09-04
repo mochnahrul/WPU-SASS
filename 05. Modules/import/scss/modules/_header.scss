@@ -1,0 +1,9 @@
+.header ul {
+  @include inline-list();
+  li {
+    background-color: lightblue;
+    a {
+      color: blueviolet;
+    }
+  }
+}

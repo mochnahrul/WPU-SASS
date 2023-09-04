@@ -1,0 +1,75 @@
+// Flow Control untuk mengatur alur kendali dari script SASSo
+
+@import "modules/mixin";
+
+$social-colors: (
+  youtube: #ff0000,
+  facebook: #3b5998,
+  twitter: #1da1f2,
+  instagram: #ffbf34,
+  twitch: #8134af,
+);
+
+body {
+  min-height: 1000px;
+}
+
+.square-profile {
+  @include profile-pic(200px, $circle: circle);
+}
+
+.circle-profile {
+  @include profile-pic(200px, $circle: false);
+}
+
+.nav {
+  @include color-mode($light-mode: false);
+}
+
+.right {
+  @include triangle(2em, black, right);
+}
+
+// For
+
+// .gradient {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   $color: salmon;
+//   @for $i from 1 to 11 {
+//     li:nth-child(#{$i}) {
+//       padding: 4px;
+//       background-color: lighten($color, $i * 2%);
+//     }
+//   }
+// }
+
+// While
+
+.gradient {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  $color: salmon;
+  $i: 1;
+  @while $i < 11 {
+    li:nth-child(#{$i}) {
+      padding: 4px;
+      background-color: lighten($color, $i * 2%);
+    }
+    $i: $i + 1;
+  }
+}
+
+// Each
+
+.social-media {
+  font-size: 2em;
+  font-weight: bold;
+  @each $social, $color in $social-colors {
+    .#{$social} {
+      color: $color;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+// Mixin adalah Kumpulan style yang dapat kita gunakan berulang-ulang
+
+// Simple Mixin
+
+@mixin inline-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    padding: 0.5rem;
+  }
+}
+
+// Arguments Mixin
+
+@mixin flex-box($direction: row, $space: center) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+.header ul {
+  @include inline-list();
+  li {
+    background-color: lightblue;
+    a {
+      color: blueviolet;
+    }
+  }
+}
+
+.container {
+  @include flex-box(row-reverse, space-evenly);
+  width: 600px;
+  height: 400px;
+  background-color: gray;
+  .box {
+    width: 60px;
+    height: 60px;
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 60px;
+  }
+}
+
+.footer ul {
+  @include inline-list();
+  li {
+    background-color: lightsalmon;
+    a {
+      color: pink;
+    }
+  }
+}

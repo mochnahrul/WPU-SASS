@@ -1,0 +1,44 @@
+// Nesting membuat hirarki visual yang jelas untuk Selector CSS kita
+
+body {
+  background-color: lightblue;
+}
+
+.main,
+footer {
+  h1,
+  p {
+    letter-spacing: 1px;
+  }
+}
+
+.main {
+  background-color: salmon;
+  padding: 1rem;
+  .main-heading {
+    color: white;
+    background-color: black;
+  }
+  .main-paragraph {
+    color: black;
+    background-color: white;
+  }
+}
+
+// Parent Selector
+
+.footer {
+  background-color: salmon;
+  padding: 1rem;
+  &:hover {
+    background-color: lightsalmon;
+  }
+  & &-heading {
+    color: white;
+    background-color: black;
+  }
+  & &-paragraph {
+    color: black;
+    background-color: white;
+  }
+}

@@ -1,0 +1,77 @@
+// Built-in Modules adalah Fungsi-fungsi bawaan SASS
+
+$base-color: violet;
+
+.container {
+  background-color: $base-color;
+  padding: 0.5rem;
+}
+
+h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  text-align: center;
+}
+
+// Built-in Modules: Color
+
+// Adjust Color
+
+// .container {
+//   background-color: adjust-color($color: $base-color, $green: 100, $blue: 100, $red: -50);
+// }
+
+// Adjust Hue
+
+// .container {
+//   background-color: adjust-hue($base-color, 30deg);
+// }
+
+// Complement
+
+// .container {
+//   background-color: complement($base-color);
+// }
+
+// Darken
+
+// .container {
+//   background-color: darken($base-color, 20%);
+// }
+
+// Lighten
+
+// .container {
+//   background-color: lighten($base-color, 5%);
+// }
+
+// Saturate
+
+// .container {
+//   background-color: saturate($base-color, 100%);
+// }
+
+// Desaturate
+
+// .container {
+//   background-color: desaturate($base-color, 100%);
+// }
+
+// Mix
+
+// .container {
+//   background-color: mix($base-color, yellow, 70%);
+// }
+
+// Fade In
+
+// .container {
+//   background-color: fade-in(rgb(238, 130, 238, 0.2), 0.5);
+// }
+
+// Fade Out
+
+.container {
+  background-color: fade-out($base-color, 0.5);
+}

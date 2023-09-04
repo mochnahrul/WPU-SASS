@@ -1,0 +1,39 @@
+body {
+  background-color: lightblue;
+}
+
+.main h1,
+.main p,
+footer h1,
+footer p {
+  letter-spacing: 1px;
+}
+
+.main {
+  background-color: salmon;
+  padding: 1rem;
+}
+.main .main-heading {
+  color: white;
+  background-color: black;
+}
+.main .main-paragraph {
+  color: black;
+  background-color: white;
+}
+
+.footer {
+  background-color: salmon;
+  padding: 1rem;
+}
+.footer:hover {
+  background-color: lightsalmon;
+}
+.footer .footer-heading {
+  color: white;
+  background-color: black;
+}
+.footer .footer-paragraph {
+  color: black;
+  background-color: white;
+}/*# sourceMappingURL=main.css.map */
